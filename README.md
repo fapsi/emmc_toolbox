@@ -1,12 +1,13 @@
-# Samsung GT-I9300 eMMC toolbox
+# Samsung eMMC toolbox
 
-A collection of tools used to revive and experiment with Samsung GT-I9300 eMMC chips (VTU00M).
+A collection of tools used to revive and experiment with Samsung GT-I9300/GT-N7100 eMMC chips (VTU00M).
 
 *This project is experimental in its nature and I take absolutely no responsiblity for anything that might happen to your device.*
 
 ## Instructions
 
 ### Reviving a dead Samsung Galaxy S3 (GT-I9300)
+*[Changed instructions for N7100](#dumping-sboot)*
 
 Prerequesities (for Debian stretch, should work on other apt-based distributions as well):
 ```shell
@@ -59,13 +60,15 @@ $ ./create_recovery_sdcard.py -o recovery_sdcard.bin -s sboot.bin
 $ dd if=recovery_sdcard.bin of=DEV
 $ sync
 ```
-
+### Reviving a dead Samsung Galaxy Note 2 (N7100)
+TODO
 ### Dumping sboot
 
 In case you ever need to obtain sboot from your device (in case eMMC's boot partition is still intact), you can use `exploit/sboot_exploit.py --dump -o SBOOT`, and the exploit will dump sboot to a file named `SBOOT`. It actually dumps a 1MB chunk starting at address 0x43e00000, so the binary's loading address is 0x43e00000.
 
 ### Reference VTU00M firmware SHA256 sums
-
+#### Samsung Galaxy Note 2 (N7100)
+#### Samsung Galaxy S3 (GT-I9300)
 * 0xF1 firmware (buggy): 4cd6e829fa9370c8bc74523e181467382444892770370daa9163ecda6499d228
 * 0xF7 firmware (bug fixed): 1c3ce3148704e21749c6b59ff88c7a133d385024f70038615806ae9e95798dbf
 
