@@ -68,6 +68,8 @@ In case you ever need to obtain sboot from your device (in case eMMC's boot part
 
 ### Reference VTU00M firmware SHA256 sums
 #### Samsung Galaxy Note 2 (N7100)
+* 0xF1 firmware (buggy): 2b7de6eb3bd30f2f2658fda7489954d5fd8951476d71f0091655fbc029d46e50
+* 0xF7 firmware (bug fixed): 
 #### Samsung Galaxy S3 (GT-I9300)
 * 0xF1 firmware (buggy): 4cd6e829fa9370c8bc74523e181467382444892770370daa9163ecda6499d228
 * 0xF7 firmware (bug fixed): 1c3ce3148704e21749c6b59ff88c7a133d385024f70038615806ae9e95798dbf
