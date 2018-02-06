@@ -7,7 +7,7 @@ A collection of tools used to revive and experiment with Samsung GT-I9300/GT-N71
 ## Instructions
 
 ### Reviving a dead Samsung Galaxy S3 (GT-I9300)
-*[Changed instructions for N7100](#dumping-sboot)*
+*[Changed instructions for N7100](#reviving-a-dead-samsung-galaxy-note-2-n7100)*
 
 Prerequesities (for Debian stretch, should work on other apt-based distributions as well):
 ```shell
