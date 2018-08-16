@@ -47,7 +47,7 @@ int main() {
 	for (int i = 0; i < sizeof fw_descr; i += 4) {
 		cmd.cmdidx = 35;
 		cmd.resp_type = 21;
-		cmd.cmdarg = 0x6AEA0 + i;
+		cmd.cmdarg = 0x60AB8 + i;
 		cmd.flags = 0;
 		FAIL_IF_NEG(mmc_send_cmd(mmc_dev, &cmd, 0));
 
@@ -74,7 +74,7 @@ int main() {
 	/* Address to read */
 	cmd.cmdidx = 35;
 	cmd.resp_type = 21;
-	cmd.cmdarg = 0x6AEA0;
+	cmd.cmdarg = 0x60AB8;
 	cmd.flags = 0;
 	FAIL_IF_NEG(mmc_send_cmd(mmc_dev, &cmd, 0));
 
